@@ -4,7 +4,7 @@ from telebot import apihelper
 
 token = os.getenv("TOKEN")
 
-bot:telebot.TeleBot = telebot.TeleBot(token)
+bot = telebot.TeleBot(token)
 
 @bot.message_handler()
 def hangle_message(message):
